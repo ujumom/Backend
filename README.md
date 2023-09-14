@@ -33,7 +33,7 @@
 ## 🐱‍💻 팀 소개
 | 팀원     | 담당                      | GitHub                                           |
 | -------- | ------------------------- | ------------------------------------------------ |
-| 이우영 👑 |  `채팅방 CRUD` `Exception` `FE`  | [@ujumom](https://github.com/ujumom)  |
+| 이우영 👑 |  `채팅방` `Exception` `FE`  | [@ujumom](https://github.com/ujumom)  |
 | 이나연   |    `spring security 설정` `회원 관리 기능`       |     [@nayonnii](https://github.com/nayonnii)      |
 | 이희건   |    `채팅` `게임 로직`       |         [@dlrjs2360](https://github.com/dlrjs2360)    |
 | 정수현   |   `CI/CD` `채팅방 검색 기능`         |    [@walwaljj](https://github.com/walwaljj)       |
