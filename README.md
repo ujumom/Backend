@@ -9,13 +9,14 @@
 ## 🎇 프로젝트 소개
 
 #### 📅 진행 기간 
-
 - 2023.08.09 ~ 2023.09.14 (5주)
 
 #### 🎯 기획 의도
 인터넷에서 함께 즐길 수 있는 웹 게임에 대한 수요는 꾸준히 증가하고 있습니다. 또한 어몽어스, 구스구스덕, 마피아 42 등 마피아 게임 콘텐츠에 대한 인기는 계속 해서 늘어나고 있습니다. 
+
 유일하게 웹에서 할 수 있었던 마피아 챗 게임 서비스는 2023년에 종료가 되었고, 타 마피아 게임 콘텐츠도 모바일 전용이거나 게임 설치를 해야 하는 불편함이 있습니다.
-챗피아(ChatFia)는 웹 접속만으로도 사용자들과 실시간 채팅으로 게임을 즐길 수 있다는 큰 차별성이 있습니다. 이러한 흐름에 따라 사용자들에게 쉽게 즐거움을 선사하는 서비스를 제공하고자 기획 되었습니다.
+
+챗피아(ChatFia)는 웹 접속만으로도 사용자들과 실시간 채팅으로 게임을 즐길 수 있다는 큰 차별성이 있습니다. 이러한 흐름에 따라 사용자들에게 쉽고 재밌는 서비스를 제공하고자 기획 되었습니다.
 
 #### ⚙️ 주요 기능
 
@@ -29,10 +30,8 @@
 | **프로필 설정/변경**     | 프로필 이미지, 닉네임을 설정하고 변경할 수 있습니다. |
 
 
-
 ## ⛑ 아키텍처
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/092d462b-b820-45d5-a497-8c7c7146574b/26673efc-4c07-4fdb-aa05-db1d04ab6550/Untitled.png)
+![Untitled](https://github.com/ujumom/Backend/assets/76635279/6b41721b-30db-47b4-a011-6f01382eae68)
 
 
 ## 🛠️ 기술 스택
@@ -51,7 +50,6 @@
 | 이우영 👑 |    | [@ujumom](https://github.com/ujumom)  |
 | 이나연   |           |            |
 | 이희건   |           |             |
-| 양아름   |           |            |
 | 정수현   |           |           |
 | 조희수   |          |      |
 
@@ -59,18 +57,13 @@
 <details> <summary>Git</summary> <div markdown="1">
 
 - Git-flow를 사용했어요.
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/092d462b-b820-45d5-a497-8c7c7146574b/809fd08b-baf4-4d62-a786-39cded4ad153/Untitled.png)
+![Untitled (1)](https://github.com/ujumom/Backend/assets/76635279/b19ad97d-f63d-4888-b1ca-bb8fa6355083)
+
 
 **branch 생성 규칙**
 - 모든 기능은 develop 브랜치에서 새 브랜치를 생성하여 작업
 - [기능]/[이슈 번호] 로 브랜치 생성
 - issue template 작성 - 브랜치 생성 - 작업 완료 - pull request templates 작성 - develop merge - test 
-
-**사용한 issue Templates**
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a5626901-0f88-4e72-8152-d545876467f4/Untitled.png)
-
-**사용한 Pull Request Templates**
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f83c771e-86fb-4879-8de7-639caa6b83ec/Untitled.png)
 
 **commit 생성 규칙**
 #✨ feat: <새로운 기능>
@@ -91,7 +84,6 @@
 ## 💡 프로젝트 구조
 <details>
     <summary>자세히</summary>
-
 ├─java
 │  └─com
 │      └─springles
@@ -321,7 +313,7 @@
       profile-settings.html
       sign-up.html
       vertification-id.html
-
+```
 </details>
 
 
