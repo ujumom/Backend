@@ -3,7 +3,7 @@
 > 채팅(Chatting) + 마피아 게임(Mafia)의 합성어, 실시간 채팅으로 마피아 게임을 즐길 수 있는 웹 서비스
 
 ## 📎 서비스 이용
-[웹 사이트]()
+[웹 사이트](http://ec2-3-34-5-192.ap-northeast-2.compute.amazonaws.com:8080/v1/login-page)
 
 
 ## 🎇 프로젝트 소개
@@ -36,10 +36,13 @@
 ## 🛠️ 기술 스택
 
 #### 💻 프론트엔드
+<img src="https://img.shields.io/badge/Thymeleaf-3DDC84?style=for-the-badge&logo=Thymeleaf&logoColor=white"> <img src="https://img.shields.io/badge/Javascript-FFCA28?style=for-the-badge&logo=Javascript&logoColor=white"> 
 
 #### 🛢 백엔드
+<img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=Spring-Boot&logoColor=white"> <img src="https://img.shields.io/badge/Websocket-59666C?style=for-the-badge&logo=Websocket&logoColor=white"> <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white"> <img src="https://img.shields.io/badge/Redis-59666C?style=for-the-badge&logo=Redis&logoColor=white"> 
 
 #### 📡 인프라
+<img src="https://img.shields.io/badge/GithubAction-007396?style=for-the-badge&logo=GithubAction&logoColor=white"> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white"> <img src="https://img.shields.io/badge/Amazon AWS-232F3E?style=for-the-badge&logo=Amazon AWS&logoColor=white">
 
 ## 🗃 ERD
 
