@@ -7,7 +7,6 @@
 
 
 ## 🎇 프로젝트 소개
-
 #### 📅 진행 기간 
 - 2023.08.09 ~ 2023.09.14 (5주)
 
@@ -51,19 +50,20 @@
 | 이나연   |           |            |
 | 이희건   |           |             |
 | 정수현   |           |           |
-| 조희수   |          |      |
+| 조희수   |          |            |
 
 ## 🐱‍💻 이렇게 함께 일했어요.
 <details> <summary>Git</summary> <div markdown="1">
 
-- Git-flow를 사용했어요.
+**Git-flow를 사용했어요.**
 ![Untitled (1)](https://github.com/ujumom/Backend/assets/76635279/b19ad97d-f63d-4888-b1ca-bb8fa6355083)
+- issue template 작성 - 브랜치 생성 - 작업 완료 - pull request templates 작성 - develop merge - test
 
-
+  
 **branch 생성 규칙**
 - 모든 기능은 develop 브랜치에서 새 브랜치를 생성하여 작업
 - [기능]/[이슈 번호] 로 브랜치 생성
-- issue template 작성 - 브랜치 생성 - 작업 완료 - pull request templates 작성 - develop merge - test 
+
 
 **commit 생성 규칙**
 #✨ feat: <새로운 기능>
@@ -80,251 +80,241 @@
 </div> </details>
 
 
-
 ## 💡 프로젝트 구조
 <details>
     <summary>자세히</summary>
-├─java
-│  └─com
-│      └─springles
-│          │  SpringlesApplication.java
-│          │
-│          ├─config
-│          │      LoginFailureHandler.java
-│          │      LoginSuccessHandler.java
-│          │      MailConfig.java
-│          │      QueryDslConfig.java
-│          │      RedisConfig.java
-│          │      RedisInitializer.java
-│          │      SwaggerConfig.java
-│          │      TimeConfig.java
-│          │      WebSecurityConfig.java
-│          │      WebSocketStompConfig.java
-│          │
-│          ├─controller
-│          │  ├─api
-│          │  │      ChatRoomController.java
-│          │  │      CookieController.java
-│          │  │      MemberController.java
-│          │  │
-│          │  ├─message
-│          │  │      MessageController.java
-│          │  │      VoteController.java
-│          │  │
-│          │  └─ui
-│          │          ChatRoomUiController.java
-│          │          ChatUiController.java
-│          │          MemberUiController.java
-│          │
-│          ├─domain
-│          │  ├─base
-│          │  │      .keep
-│          │  │
-│          │  ├─constants
-│          │  │      BaseEnumCode.java
-│          │  │      ChatRoomCode.java
-│          │  │      GamePhase.java
-│          │  │      GameRole.java
-│          │  │      GameRoleNum.java
-│          │  │      Level.java
-│          │  │      ProfileImg.java
-│          │  │      ResponseCode.java
-│          │  │
-│          │  ├─dto
-│          │  │  ├─chatroom
-│          │  │  │      ChatRoomCreateResponseDto.java
-│          │  │  │      ChatRoomReqDTO.java
-│          │  │  │      ChatRoomResponseDto.java
-│          │  │  │      ChatRoomUpdateReqDto.java
-│          │  │  │
-│          │  │  ├─cookie
-│          │  │  │      CookieSetRequest.java
-│          │  │  │
-│          │  │  ├─member
-│          │  │  │      MemberCreateRequest.java
-│          │  │  │      MemberDeleteRequest.java
-│          │  │  │      MemberInfoResponse.java
-│          │  │  │      MemberLoginRequest.java
-│          │  │  │      MemberLoginResponse.java
-│          │  │  │      MemberProfileCreateRequest.java
-│          │  │  │      MemberProfileRead.java
-│          │  │  │      MemberProfileResponse.java
-│          │  │  │      MemberProfileUpdateRequest.java
-│          │  │  │      MemberRecordResponse.java
-│          │  │  │      MemberSimpleProfileResponse.java
-│          │  │  │      MemberUpdateRequest.java
-│          │  │  │      MemberVertifIdRequest.java
-│          │  │  │      MemberVertifPwRequest.java
-│          │  │  │      PlayerInfoRequest.java
-│          │  │  │      PlayerInfoResponse.java
-│          │  │  │
-│          │  │  ├─message
-│          │  │  │      DayDiscussionMessage.java
-│          │  │  │      DayEliminationMessage.java
-│          │  │  │      NightVoteMessage.java
-│          │  │  │      RoleExplainMessage.java
-│          │  │  │
-│          │  │  ├─response
-│          │  │  │      PlayerStatus.java
-│          │  │  │      ResResult.java
-│          │  │  │
-│          │  │  └─vote
-│          │  │          ConfirmResultResponseDto.java
-│          │  │          GameSessionVoteRequestDto.java
-│          │  │          VoteResultResponseDto.java
-│          │  │
-│          │  └─entity
-│          │          BlackListToken.java
-│          │          ChatRoom.java
-│          │          GameRecord.java
-│          │          GameSession.java
-│          │          Member.java
-│          │          MemberGameInfo.java
-│          │          MemberRecord.java
-│          │          Player.java
-│          │          RefreshToken.java
-│          │          Vote.java
-│          │          VoteInfo.java
-│          │
-│          ├─exception
-│          │  │  CustomException.java
-│          │  │  ErrorResponse.java
-│          │  │  GlobalExceptionHandler.java
-│          │  │
-│          │  └─constants
-│          │          ErrorCode.java
-│          │
-│          ├─game
-│          │  │  ChatMessage.java
-│          │  │  DayDiscussionManager.java
-│          │  │  DayEliminationManager.java
-│          │  │  DayToNightManager.java
-│          │  │  GameSessionManager.java
-│          │  │  MessageManager.java
-│          │  │  NightVoteManager.java
-│          │  │  RoleManager.java
-│          │  │
-│          │  └─task
-│          │          VoteFinTimerTask.java
-│          │
-│          ├─jwt
-│          │      JwtExceptionFilter.java
-│          │      JwtTokenFilter.java
-│          │      JwtTokenUtils.java
-│          │
-│          ├─repository
-│          │  │  BlackListTokenRedisRepository.java
-│          │  │  ChatRoomJpaRepository.java
-│          │  │  GameRecordJpaRepository.java
-│          │  │  GameSessionRedisRepository.java
-│          │  │  MemberGameInfoJpaRepository.java
-│          │  │  MemberJpaRepository.java
-│          │  │  MemberRecordJpaRepository.java
-│          │  │  PlayerRedisRepository.java
-│          │  │  RefreshTokenRedisRepository.java
-│          │  │  VoteRedisRepository.java
-│          │  │  VoteRepository.java
-│          │  │
-│          │  ├─custom
-│          │  │      ChatRoomJpaRepositoryCustom.java
-│          │  │      MemberJpaRepositoryCustom.java
-│          │  │
-│          │  ├─impl
-│          │  │      ChatRoomJpaRepositoryImpl.java
-│          │  │      MemberJpaRepositoryImpl.java
-│          │  │
-│          │  └─support
-│          │          Querydsl4RepositorySupport.java
-│          │
-│          ├─service
-│          │  │  ChatRoomService.java
-│          │  │  CookieService.java
-│          │  │  GameSessionVoteService.java
-│          │  │  MemberService.java
-│          │  │
-│          │  └─impl
-│          │          ChatRoomServiceImpl.java
-│          │          CookieServiceImpl.java
-│          │          GameSessionVoteServiceImpl.java
-│          │          MemberServiceImpl.java
-│          │
-│          └─valid
-│                  ValidationGroups.java
-│                  ValidationSequence.java
-│
-└─resources
-│  application-dev.yml
-│  application-prod.yml
-│  application-redis.yml
-│  application.yml
-│  data.sql
-│
-├─static
-│  ├─css
-│  │      basic.css
-│  │
-│  ├─images
-│  │  │  icon_chatroom_info.png
-│  │  │  icon_lv_info_btn.png
-│  │  │  lock.png
-│  │  │  logo.png
-│  │  │  profile.png
-│  │  │  profile_01.jpg
-│  │  │  profile_02.jpg
-│  │  │  profile_03.jpg
-│  │  │  profile_04.jpg
-│  │  │  profile_05.jpg
-│  │  │  profile_06.jpg
-│  │  │  search.png
-│  │  │
-│  │  └─level
-│  │          ASSOCIATE.png
-│  │          BEGINNER.png
-│  │          BOSS.png
-│  │          CAPTAIN.png
-│  │          SOLDIER.png
-│  │          UNDERBOSS.png
-│  │
-│  └─js
-│          stomp.js
-│
-└─templates
-│  chat-lobby.html
-│  chat-room.html
-│  rooms.html
-│
-├─fragments
-│      footer.html
-│      header.html
-│
-├─home
-│      add.html
-│      index.html
-│
-├─layouts
-│      basic.html
-│
-└─member
-      login.html
-      member-info.html
-      member-sign-out.html
-      my-page.html
-      profile-change.html
-      profile-settings.html
-      sign-up.html
-      vertification-id.html
-```
+
+    
+    ├─java
+    │  └─com
+    │      └─springles
+    │          │  SpringlesApplication.java
+    │          │
+    │          ├─config
+    │          │      LoginFailureHandler.java
+    │          │      LoginSuccessHandler.java
+    │          │      MailConfig.java
+    │          │      QueryDslConfig.java
+    │          │      RedisConfig.java
+    │          │      RedisInitializer.java
+    │          │      SwaggerConfig.java
+    │          │      TimeConfig.java
+    │          │      WebSecurityConfig.java
+    │          │      WebSocketStompConfig.java
+    │          │
+    │          ├─controller
+    │          │  ├─api
+    │          │  │      ChatRoomController.java
+    │          │  │      CookieController.java
+    │          │  │      MemberController.java
+    │          │  │
+    │          │  ├─message
+    │          │  │      MessageController.java
+    │          │  │      VoteController.java
+    │          │  │
+    │          │  └─ui
+    │          │          ChatRoomUiController.java
+    │          │          ChatUiController.java
+    │          │          MemberUiController.java
+    │          │
+    │          ├─domain
+    │          │  ├─base
+    │          │  │      .keep
+    │          │  │
+    │          │  ├─constants
+    │          │  │      BaseEnumCode.java
+    │          │  │      ChatRoomCode.java
+    │          │  │      GamePhase.java
+    │          │  │      GameRole.java
+    │          │  │      GameRoleNum.java
+    │          │  │      Level.java
+    │          │  │      ProfileImg.java
+    │          │  │      ResponseCode.java
+    │          │  │
+    │          │  ├─dto
+    │          │  │  ├─chatroom
+    │          │  │  │      ChatRoomCreateResponseDto.java
+    │          │  │  │      ChatRoomReqDTO.java
+    │          │  │  │      ChatRoomResponseDto.java
+    │          │  │  │      ChatRoomUpdateReqDto.java
+    │          │  │  │
+    │          │  │  ├─cookie
+    │          │  │  │      CookieSetRequest.java
+    │          │  │  │
+    │          │  │  ├─member
+    │          │  │  │      MemberCreateRequest.java
+    │          │  │  │      MemberDeleteRequest.java
+    │          │  │  │      MemberInfoResponse.java
+    │          │  │  │      MemberLoginRequest.java
+    │          │  │  │      MemberLoginResponse.java
+    │          │  │  │      MemberProfileCreateRequest.java
+    │          │  │  │      MemberProfileRead.java
+    │          │  │  │      MemberProfileResponse.java
+    │          │  │  │      MemberProfileUpdateRequest.java
+    │          │  │  │      MemberRecordResponse.java
+    │          │  │  │      MemberSimpleProfileResponse.java
+    │          │  │  │      MemberUpdateRequest.java
+    │          │  │  │      MemberVertifIdRequest.java
+    │          │  │  │      MemberVertifPwRequest.java
+    │          │  │  │      PlayerInfoRequest.java
+    │          │  │  │      PlayerInfoResponse.java
+    │          │  │  │
+    │          │  │  ├─message
+    │          │  │  │      DayDiscussionMessage.java
+    │          │  │  │      DayEliminationMessage.java
+    │          │  │  │      NightVoteMessage.java
+    │          │  │  │      RoleExplainMessage.java
+    │          │  │  │
+    │          │  │  ├─response
+    │          │  │  │      PlayerStatus.java
+    │          │  │  │      ResResult.java
+    │          │  │  │
+    │          │  │  └─vote
+    │          │  │          ConfirmResultResponseDto.java
+    │          │  │          GameSessionVoteRequestDto.java
+    │          │  │          VoteResultResponseDto.java
+    │          │  │
+    │          │  └─entity
+    │          │          BlackListToken.java
+    │          │          ChatRoom.java
+    │          │          GameRecord.java
+    │          │          GameSession.java
+    │          │          Member.java
+    │          │          MemberGameInfo.java
+    │          │          MemberRecord.java
+    │          │          Player.java
+    │          │          RefreshToken.java
+    │          │          Vote.java
+    │          │          VoteInfo.java
+    │          │
+    │          ├─exception
+    │          │  │  CustomException.java
+    │          │  │  ErrorResponse.java
+    │          │  │  GlobalExceptionHandler.java
+    │          │  │
+    │          │  └─constants
+    │          │          ErrorCode.java
+    │          │
+    │          ├─game
+    │          │  │  ChatMessage.java
+    │          │  │  DayDiscussionManager.java
+    │          │  │  DayEliminationManager.java
+    │          │  │  DayToNightManager.java
+    │          │  │  GameSessionManager.java
+    │          │  │  MessageManager.java
+    │          │  │  NightVoteManager.java
+    │          │  │  RoleManager.java
+    │          │  │
+    │          │  └─task
+    │          │          VoteFinTimerTask.java
+    │          │
+    │          ├─jwt
+    │          │      JwtExceptionFilter.java
+    │          │      JwtTokenFilter.java
+    │          │      JwtTokenUtils.java
+    │          │
+    │          ├─repository
+    │          │  │  BlackListTokenRedisRepository.java
+    │          │  │  ChatRoomJpaRepository.java
+    │          │  │  GameRecordJpaRepository.java
+    │          │  │  GameSessionRedisRepository.java
+    │          │  │  MemberGameInfoJpaRepository.java
+    │          │  │  MemberJpaRepository.java
+    │          │  │  MemberRecordJpaRepository.java
+    │          │  │  PlayerRedisRepository.java
+    │          │  │  RefreshTokenRedisRepository.java
+    │          │  │  VoteRedisRepository.java
+    │          │  │  VoteRepository.java
+    │          │  │
+    │          │  ├─custom
+    │          │  │      ChatRoomJpaRepositoryCustom.java
+    │          │  │      MemberJpaRepositoryCustom.java
+    │          │  │
+    │          │  ├─impl
+    │          │  │      ChatRoomJpaRepositoryImpl.java
+    │          │  │      MemberJpaRepositoryImpl.java
+    │          │  │
+    │          │  └─support
+    │          │          Querydsl4RepositorySupport.java
+    │          │
+    │          ├─service
+    │          │  │  ChatRoomService.java
+    │          │  │  CookieService.java
+    │          │  │  GameSessionVoteService.java
+    │          │  │  MemberService.java
+    │          │  │
+    │          │  └─impl
+    │          │          ChatRoomServiceImpl.java
+    │          │          CookieServiceImpl.java
+    │          │          GameSessionVoteServiceImpl.java
+    │          │          MemberServiceImpl.java
+    │          │
+    │          └─valid
+    │                  ValidationGroups.java
+    │                  ValidationSequence.java
+    │
+    └─resources
+    │  application-dev.yml
+    │  application-prod.yml
+    │  application-redis.yml
+    │  application.yml
+    │  data.sql
+    │
+    ├─static
+    │  ├─css
+    │  │      basic.css
+    │  │
+    │  ├─images
+    │  │  │  icon_chatroom_info.png
+    │  │  │  icon_lv_info_btn.png
+    │  │  │  lock.png
+    │  │  │  logo.png
+    │  │  │  profile.png
+    │  │  │  profile_01.jpg
+    │  │  │  profile_02.jpg
+    │  │  │  profile_03.jpg
+    │  │  │  profile_04.jpg
+    │  │  │  profile_05.jpg
+    │  │  │  profile_06.jpg
+    │  │  │  search.png
+    │  │  │
+    │  │  └─level
+    │  │          ASSOCIATE.png
+    │  │          BEGINNER.png
+    │  │          BOSS.png
+    │  │          CAPTAIN.png
+    │  │          SOLDIER.png
+    │  │          UNDERBOSS.png
+    │  │
+    │  └─js
+    │          stomp.js
+    │
+    └─templates
+    │  chat-lobby.html
+    │  chat-room.html
+    │  rooms.html
+    │
+    ├─fragments
+    │      footer.html
+    │      header.html
+    │
+    ├─home
+    │      add.html
+    │      index.html
+    │
+    ├─layouts
+    │      basic.html
+    │
+    └─member
+          login.html
+          member-info.html
+          member-sign-out.html
+          my-page.html
+          profile-change.html
+          profile-settings.html
+          sign-up.html
+          vertification-id.html
+    
+    
+
 </details>
-
-
-
-
-<details> <summary>개발 환경</summary> <div markdown="1">
-
-## **Development Environment**
-
-
-</div> </details>
-
-
-
