@@ -34,10 +34,10 @@
 | 팀원     | 담당                      | GitHub                                           |
 | -------- | ------------------------- | ------------------------------------------------ |
 | 이우영 👑 |  `채팅방 CRUD` `Exception` `FE`  | [@ujumom](https://github.com/ujumom)  |
-| 이나연   |    `spring security 설정` `회원 관리 시스템 개발`       |     [@nayonnii](https://github.com/nayonnii)      |
-| 이희건   |    `채팅` `게임 로직 개발`       |         [@dlrjs2360](https://github.com/dlrjs2360)    |
-| 정수현   |   `CI/CD` `채팅방 검색 기능 개발`         |    [@walwaljj](https://github.com/walwaljj)       |
-| 조희수   |    `채팅` `게임 투표 로직 개발`      |   [@ranunclulus]()         |
+| 이나연   |    `spring security 설정` `회원 관리 기능`       |     [@nayonnii](https://github.com/nayonnii)      |
+| 이희건   |    `채팅` `게임 로직`       |         [@dlrjs2360](https://github.com/dlrjs2360)    |
+| 정수현   |   `CI/CD` `채팅방 검색 기능`         |    [@walwaljj](https://github.com/walwaljj)       |
+| 조희수   |    `채팅` `게임 투표 로직`      |   [@ranunclulus]()         |
 
 ## ⛑ 아키텍처
 ![Untitled](https://github.com/ujumom/Backend/assets/76635279/6b41721b-30db-47b4-a011-6f01382eae68)
