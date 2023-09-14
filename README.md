@@ -84,10 +84,6 @@
 
 </div> </details>
 
-채팅방 CRUD, 
-Exception, API 설계 
-
-
 ## 💡 프로젝트 구조
 <details>
     <summary>자세히</summary>
